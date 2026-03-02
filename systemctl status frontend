@@ -1,0 +1,23 @@
+[0;1;32m●[0m dashboard.service - Dashboard
+     Loaded: loaded (]8;;file://debian-s-1vcpu-1gb-nyc1-01/etc/systemd/system/dashboard.service\/etc/systemd/system/dashboard.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Sun 2026-03-01 21:46:26 UTC; 8s ago
+ Invocation: cf62a4a461b54bd8b4bd3a9d5f7b0e59
+   Main PID: 129780 (npm run start)
+      Tasks: 23[0;38;5;245m (limit: 4655)[0m
+     Memory: 237.7M (peak: 249.4M)
+        CPU: 10.645s
+     CGroup: /system.slice/dashboard.service
+             ├─[0;38;5;245m129780 "npm run start"[0m
+             ├─[0;38;5;245m129793 sh -c "medusa start"[0m
+             └─[0;38;5;245m129794 node /root/dashboard/node_modules/.bin/medusa start[0m
+
+Mar 01 21:46:27 debian-s-1vcpu-1gb-nyc1-01 npm[129780]: > medusa start
+Mar 01 21:46:30 debian-s-1vcpu-1gb-nyc1-01 npm[129794]: {"activity_id":"01KJNNW03BZSVW3M8RH1SEQZQJ","config":{},"level":"info","message":"Creating server","timestamp":"2026-03-01 21:46:30"}
+Mar 01 21:46:30 debian-s-1vcpu-1gb-nyc1-01 npm[129794]: {"level":"info","message":"Skipping instrumentation registration. No register function found.","timestamp":"2026-03-01 21:46:30"}
+Mar 01 21:46:30 debian-s-1vcpu-1gb-nyc1-01 npm[129794]: {"level":"info","message":"No link to load from /root/dashboard/node_modules/@medusajs/draft-order/.medusa/server/src/links. skipped.","timestamp":"2026-03-01 21:46:30"}
+Mar 01 21:46:31 debian-s-1vcpu-1gb-nyc1-01 npm[129794]: {"level":"warn","message":"Local Event Bus installed. This is not recommended for production.","timestamp":"2026-03-01 21:46:31"}
+Mar 01 21:46:31 debian-s-1vcpu-1gb-nyc1-01 npm[129794]: {"level":"info","message":"Locking module: Using \"in-memory\" as default.","timestamp":"2026-03-01 21:46:31"}
+Mar 01 21:46:33 debian-s-1vcpu-1gb-nyc1-01 npm[129794]: {"level":"info","message":"No workflow to load from /root/dashboard/node_modules/@medusajs/draft-order/.medusa/server/src/workflows. skipped.","timestamp":"2026-03-01 21:46:33"}
+Mar 01 21:46:33 debian-s-1vcpu-1gb-nyc1-01 npm[129794]: {"level":"info","message":"No subscriber to load from /root/dashboard/node_modules/@medusajs/draft-order/.medusa/server/src/subscribers. skipped.","timestamp":"2026-03-01 21:46:33"}
+Mar 01 21:46:34 debian-s-1vcpu-1gb-nyc1-01 npm[129794]: {"level":"info","message":"No job to load from /root/dashboard/node_modules/@medusajs/medusa/dist/jobs. skipped.","timestamp":"2026-03-01 21:46:34"}
+Mar 01 21:46:34 debian-s-1vcpu-1gb-nyc1-01 npm[129794]: {"level":"info","message":"No job to load from /root/dashboard/node_modules/@medusajs/draft-order/.medusa/server/src/jobs. skipped.","timestamp":"2026-03-01 21:46:34"}
